@@ -78,13 +78,13 @@
             "type": "color",
             "id": "button",
             "label": "t:settings_schema.colors.settings.button_background.label",
-            "default": "#121212"
+            "default": "#BF864F"
           },
           {
             "type": "color",
             "id": "button_border",
             "label": "Solid button border",
-            "default": "#121212"
+            "default": "#BF864F"
           },
           {
             "type": "color",
@@ -96,19 +96,19 @@
             "type": "color",
             "id": "button_hover",
             "label": "Solid button background hover",
-            "default": "#121212"
+            "default": "#FFFFFF"
           },
           {
             "type": "color",
             "id": "button_border_hover",
             "label": "Solid button border hover",
-            "default": "#121212"
+            "default": "#FFFFFF"
           },
           {
             "type": "color",
             "id": "button_label_hover",
             "label": "Solid button label hover",
-            "default": "#FFFFFF"
+            "default": "#2C2C2C"
           },
           {
             "type": "header",
@@ -118,25 +118,25 @@
             "type": "color",
             "id": "secondary_button_label",
             "label": "t:settings_schema.colors.settings.secondary_button_label.label",
-            "default": "#121212"
+            "default": "#2C2C2C"
           },
           {
             "type": "color",
             "id": "secondary_button_border",
             "label": "Outline button border",
-            "default": "#121212"
+            "default": "#2C2C2C"
           },
           {
             "type": "color",
             "id": "secondary_button_hover",
             "label": "Outline button background hover",
-            "default": "#121212"
+            "default": "#BF864F"
           },
           {
             "type": "color",
             "id": "secondary_button_border_hover",
             "label": "Outline button border hover",
-            "default": "#121212"
+            "default": "#BF864F"
           },
           {
             "type": "color",
