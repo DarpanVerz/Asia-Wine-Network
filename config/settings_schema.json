@@ -152,13 +152,13 @@
             "type": "color",
             "id": "link_label",
             "label": "Link label",
-            "default": "#010101"
+            "default": "#2C2C2C"
           },
           {
             "type": "color",
             "id": "link_label_hover",
             "label": "Link label hover",
-            "default": "#FFB600"
+            "default": "#BF864F"
           }
         ],
         "role": {
