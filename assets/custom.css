@@ -4,7 +4,10 @@
 @font-face {font-family: 'Poppins';src: url('https://cdn.shopify.com/s/files/1/0976/3261/6757/files/Poppins-Medium.eot');src: url('https://cdn.shopify.com/s/files/1/0976/3261/6757/files/Poppins-Medium.eot?#iefix') format('embedded-opentype'),url('https://cdn.shopify.com/s/files/1/0976/3261/6757/files/Poppins-Medium.woff2') format('woff2'),url('https://cdn.shopify.com/s/files/1/0976/3261/6757/files/Poppins-Medium.woff') format('woff'),url('https://cdn.shopify.com/s/files/1/0976/3261/6757/files/Poppins-Medium.ttf') format('truetype'),url('Poppins-Medium.svg#Poppins-Medium') format('svg');font-weight: 500;font-style: normal;font-display: swap;}
 @font-face {font-family: 'Libre Baskerville';src: url('https://cdn.shopify.com/s/files/1/0976/3261/6757/files/LibreBaskerville-Regular.eot');src: url('https://cdn.shopify.com/s/files/1/0976/3261/6757/files/LibreBaskerville-Regular.eot?#iefix') format('embedded-opentype'),url('https://cdn.shopify.com/s/files/1/0976/3261/6757/files/LibreBaskerville-Regular.woff2') format('woff2'),url('https://cdn.shopify.com/s/files/1/0976/3261/6757/files/LibreBaskerville-Regular.woff') format('woff'),url('https://cdn.shopify.com/s/files/1/0976/3261/6757/files/LibreBaskerville-Regular.ttf') format('truetype'),url('LibreBaskerville-Regular.svg#LibreBaskerville-Regular') format('svg');font-weight: normal;font-style: normal;font-display: swap;}
 
+
 /*================ General ================*/
+h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5{color:rgb(var(--color-title));}
+
 
 /*================ Header ================*/
 
