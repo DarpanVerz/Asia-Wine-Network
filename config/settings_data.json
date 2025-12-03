@@ -155,7 +155,7 @@
           "button_border": "#BF864F",
           "button_label": "#ffffff",
           "button_hover": "#FFFFFF",
-          "button_border_hover": "#FFFFFF",
+          "button_border_hover": "#2c2c2c",
           "button_label_hover": "#2C2C2C",
           "secondary_button_label": "#121212",
           "secondary_button_border": "#2C2C2C",
