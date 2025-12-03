@@ -13,7 +13,7 @@ h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5{color:rgb(var(--color-title));}
 .button, .shopify-challenge__button, .customer button, button.shopify-payment-button__button--unbranded {min-height: calc(4.8rem + var(--buttons-border-width) * 2);}
 .button:before, .shopify-challenge__button:before, .customer button:before, .shopify-payment-button__button--unbranded:before, .button:after, .shopify-challenge__button:after, .customer button:after, .shopify-payment-button__button--unbranded:after{content: none;}
 .button, .shopify-challenge__button, .customer button{border:rgb(var(--buttons-border-width)) solid rgb(var(--color-button-border));}
-.button:hover, .shopify-challenge__button:hover, .customer button:hover{background-color: rgb(var(--color-button-hover));color: rgb(var(--color-button-text-hover));border-width:rgb(var(--buttons-border-width));border-color: rgb(var(--color-button-border-hover));}
+.button:hover, .shopify-challenge__button:hover, .customer button:hover{background-color: rgb(var(--color-button-hover));color: rgb(var(--color-button-text-hover));border:rgb(var(--buttons-border-width)) solid rgb(var(--color-button-border-hover));}
 .button--secondary, .button--tertiary{background-color: transparent;color: rgb(var(--color-secondary-button-text));border-color: rgb(var(--color-secondary-button-border));}
 .button--secondary:hover{background-color: rgb(var(--color-secondary-button-hover));color: rgb(var(--color-secondary-button-text-hover));border-color: rgb(var(--color-secondary-button-border-hover));}
 .button.button--secondary:disabled, .button.button--secondary[aria-disabled=true], .button.button--secondary.disabled{color: #C9C9C9;border-color: #C9C9C9;opacity: 1;}
