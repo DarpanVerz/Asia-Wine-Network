@@ -54,9 +54,15 @@
           },
           {
             "type": "color",
+            "id": "title",
+            "label": "Title",
+            "default": "#2C2C2C"
+          },
+          {
+            "type": "color",
             "id": "text",
             "label": "t:settings_schema.colors.settings.text.label",
-            "default": "#121212"
+            "default": "#2C2C2C"
           },
           {
             "type": "color",
