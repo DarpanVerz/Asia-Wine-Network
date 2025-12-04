@@ -127,6 +127,12 @@
 
   <div class="custom-announcement-bar color-{{ section.settings.announcement_color_scheme }} gradient">
     <div class="page-width">
+      <div class="header__contact">
+
+      </div>
+      <div class="header__announcement">
+
+      </div>
       <div class="header__icons{% if section.settings.enable_country_selector or section.settings.enable_language_selector %} header__icons--localization header-localization{% endif %}">
         <div class="desktop-localization-wrapper">
           {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
