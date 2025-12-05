@@ -474,6 +474,30 @@
   customElements.define('sticky-header', StickyHeader);
 {% endjavascript %}
 
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const sectionId = '{{ section.id }}';
+    const sectionSelector = '#shopify-section-' + sectionId;
+    
+    const swiperAnnouncement = new Swiper(sectionSelector + ' .announcement-bar-swiper', {
+      direction: 'vertical',
+      effect: 'slide',
+      slidesPerView: 1,
+      loop: true,
+      {% if section.settings.auto_rotate %}
+      autoplay: {
+        delay: {{ section.settings.change_slides_speed }}000,
+        disableOnInteraction: false,
+      },
+      {% endif %}
+      navigation: {
+        nextEl: sectionSelector + ' .swiper-button-next',
+        prevEl: sectionSelector + ' .swiper-button-prev',
+      },
+    });
+  });
+</script>
+
 <script type="application/ld+json">
   {
     "@context": "http://schema.org",
@@ -537,6 +561,28 @@
       "type": "richtext",
       "id": "contact_text",
       "label": "Text"
+    },
+    {
+      "type": "checkbox",
+      "id": "auto_rotate",
+      "label": "t:sections.announcement-bar.settings.auto_rotate.label",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "change_slides_speed",
+      "min": 3,
+      "max": 9,
+      "step": 1,
+      "unit": "s",
+      "label": "t:sections.announcement-bar.settings.change_slides_speed.label",
+      "default": 5
+    },
+    {
+      "type": "color_scheme",
+      "id": "announcement_color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-4"
     },
     {
       "type": "header",
