@@ -145,7 +145,7 @@
                 <div class="slideshow__slide">
                   <div class="announcement-bar__announcement">
                     {%- if block.settings.text != blank -%}
-                      <p class="announcement-bar__message h5">
+                      <p class="announcement-bar__message">
                         {% if block.settings.icon != blank %}
                           {{- block.settings.icon | image_url: width: block.settings.icon.width | image_tag: loading: 'lazy', sizes: sizes, widths: '30' -}}
                         {% endif %}

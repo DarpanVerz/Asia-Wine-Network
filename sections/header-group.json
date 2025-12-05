@@ -38,9 +38,19 @@
     },
     "header": {
       "type": "header",
+      "blocks": {
+        "announcement_r9aBEC": {
+          "type": "announcement",
+          "settings": {
+            "text": "Free Delivery for Orders Above $50"
+          }
+        }
+      },
+      "block_order": [
+        "announcement_r9aBEC"
+      ],
       "settings": {
-        "logo_position": "middle-center",
-        "mobile_logo_position": "center",
+        "contact_text": "<p>Wine Assistance: (65) 6273 3350</p>",
         "menu": "main-menu-1",
         "menu_type_desktop": "dropdown",
         "sticky_header_type": "always",
