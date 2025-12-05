@@ -41,17 +41,26 @@
       "blocks": {
         "announcement_r9aBEC": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
             "text": "Free Delivery for Orders Above $50"
+          }
+        },
+        "announcement_bQ86xW": {
+          "type": "announcement",
+          "settings": {
+            "text": "Welcome to our store"
           }
         }
       },
       "block_order": [
-        "announcement_r9aBEC"
+        "announcement_r9aBEC",
+        "announcement_bQ86xW"
       ],
       "settings": {
         "contact_text": "<p>Wine Assistance: (65) 6273 3350</p>",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "announcement_color_scheme": "",
         "menu": "main-menu-1",
         "menu_type_desktop": "dropdown",
         "sticky_header_type": "always",
