@@ -481,8 +481,7 @@
     const sectionSelector = '#shopify-section-' + sectionId;
     
     const swiperAnnouncement = new Swiper(sectionSelector + ' .announcement-bar-swiper', {
-      direction: 'vertical',
-      effect: 'slide',
+      effect: 'fade',
       slidesPerView: 1,
       loop: true,
       {% if section.settings.auto_rotate %}
