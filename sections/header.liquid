@@ -107,6 +107,9 @@
     if block.type == '@app'
       assign has_app_block = true
     endif
+    if block.type == 'announcement'
+      assign announcement_block = true
+    endif
   endfor
 -%}
 
@@ -129,11 +132,32 @@
     <div class="page-width">
       <div class="announcement-wrap">
         <div class="header__contact">
-          {{- section.settings.icon | image_url: width: section.settings.icon.width | image_tag: loading: 'lazy', sizes: sizes, widths: '30' -}}{{ section.settings.contact_text }}
+          {% if section.settings.icon != blank %}
+            {{- section.settings.icon | image_url: width: section.settings.icon.width | image_tag: loading: 'lazy', sizes: sizes, widths: '30' -}}
+          {% endif %}
+          {{ section.settings.contact_text }}
         </div>
+        {% if announcement_block %}
         <div class="header__announcement">
-
+          {%- for block in section.blocks -%}
+            {%- case block.type -%}
+              {%- when 'announcement' -%}
+                <div class="slideshow__slide slider__slide grid__item grid--1-col">
+                <div class="announcement-bar__announcement">
+                  {%- if block.settings.text != blank -%}
+                    <p class="announcement-bar__message h5">
+                      {% if block.settings.icon != blank %}
+                        {{- block.settings.icon | image_url: width: block.settings.icon.width | image_tag: loading: 'lazy', sizes: sizes, widths: '30' -}}
+                      {% endif %}
+                      <span>{{ block.settings.text }}</span>
+                    </p>
+                  {%- endif -%}
+                </div>
+              </div>
+            {%- endcase -%}
+          {%- endfor -%}
         </div>
+        {% endif %}
         <div class="header__icons{% if section.settings.enable_country_selector or section.settings.enable_language_selector %} header__icons--localization header-localization{% endif %}">
           <div class="desktop-localization-wrapper">
             {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
@@ -643,6 +667,23 @@
   "blocks": [
     {
       "type": "@app"
+    },
+    {
+      "type": "announcement",
+      "name": "t:sections.announcement-bar.blocks.announcement.name",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "default": "t:sections.announcement-bar.blocks.announcement.settings.text.default",
+          "label": "t:sections.announcement-bar.blocks.announcement.settings.text.label"
+        }
+      ]
     }
   ]
 }
