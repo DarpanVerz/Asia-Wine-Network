@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5{color:rgb(var(--color-title));}
 
 
 /*================ Header ================*/
-.header__announcement{
+.announcement-wrap{
     display: grid;
     align-items: center;
     justify-content: center;
