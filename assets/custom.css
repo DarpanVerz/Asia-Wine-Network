@@ -23,8 +23,9 @@ h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5{color:rgb(var(--color-title));}
 .button.button--secondary:disabled:hover, .button.button--secondary[aria-disabled=true]:hover, .button.button--secondary.disabled:hover{background: transparent;color: #C9C9C9;border-color: #C9C9C9;opacity: 1;}
 
 
-
 /*================ Header ================*/
+
+
 
 /*================ Homepage ================*/
 
