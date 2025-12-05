@@ -41,6 +41,7 @@
       "blocks": {
         "announcement_r9aBEC": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "Free Delivery for Orders Above $50"
           }
