@@ -474,6 +474,7 @@
   customElements.define('sticky-header', StickyHeader);
 {% endjavascript %}
 
+{% if announcement_block %}
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     const sectionId = '{{ section.id }}';
@@ -497,6 +498,7 @@
     });
   });
 </script>
+{% endif %}
 
 <script type="application/ld+json">
   {
