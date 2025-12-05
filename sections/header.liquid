@@ -142,18 +142,18 @@
           {%- for block in section.blocks -%}
             {%- case block.type -%}
               {%- when 'announcement' -%}
-                <div class="slideshow__slide slider__slide grid__item grid--1-col">
-                <div class="announcement-bar__announcement">
-                  {%- if block.settings.text != blank -%}
-                    <p class="announcement-bar__message h5">
-                      {% if block.settings.icon != blank %}
-                        {{- block.settings.icon | image_url: width: block.settings.icon.width | image_tag: loading: 'lazy', sizes: sizes, widths: '30' -}}
-                      {% endif %}
-                      <span>{{ block.settings.text }}</span>
-                    </p>
-                  {%- endif -%}
+                <div class="slideshow__slide">
+                  <div class="announcement-bar__announcement">
+                    {%- if block.settings.text != blank -%}
+                      <p class="announcement-bar__message h5">
+                        {% if block.settings.icon != blank %}
+                          {{- block.settings.icon | image_url: width: block.settings.icon.width | image_tag: loading: 'lazy', sizes: sizes, widths: '30' -}}
+                        {% endif %}
+                        <span>{{ block.settings.text }}</span>
+                      </p>
+                    {%- endif -%}
+                  </div>
                 </div>
-              </div>
             {%- endcase -%}
           {%- endfor -%}
         </div>
