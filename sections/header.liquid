@@ -129,7 +129,7 @@
     <div class="page-width">
       <div class="announcement-wrap">
         <div class="header__contact">
-          {{ section.settings.contact_text }}
+          {{- section.settings.icon | image_url: width: section.settings.icon.width | image_tag: loading: 'lazy', sizes: sizes, widths: '30' -}}{{ section.settings.contact_text }}
         </div>
         <div class="header__announcement">
 
