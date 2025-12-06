@@ -43,7 +43,7 @@
           "type": "menu",
           "settings": {
             "links_right": "main-menu-2",
-            "menu_mobile": ""
+            "menu_mobile": "main-menu-mobile"
           }
         },
         "announcement_r9aBEC": {
