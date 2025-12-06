@@ -39,6 +39,13 @@
     "header": {
       "type": "header",
       "blocks": {
+        "menu_Afrrqe": {
+          "type": "menu",
+          "settings": {
+            "links_right": "main-menu-1",
+            "menu_mobile": ""
+          }
+        },
         "announcement_r9aBEC": {
           "type": "announcement",
           "settings": {
@@ -53,6 +60,7 @@
         }
       },
       "block_order": [
+        "menu_Afrrqe",
         "announcement_r9aBEC",
         "announcement_bQ86xW"
       ],
