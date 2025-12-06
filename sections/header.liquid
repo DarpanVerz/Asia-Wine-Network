@@ -351,6 +351,15 @@
     {%- if request.page_type == 'index' -%}
       </h1>
     {%- endif -%}
+
+
+        {% comment %} heade menus right start {% endcomment %}
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'menu' and block.settings.links_right != blank -%}
+            {%- render 'header-dropdown-menu-right', block: block -%}
+          {%- endif -%}
+        {%- endfor -%}
+        {% comment %} heade menus right End {% endcomment %}
     
   </header>
 </{{ header_tag }}>
