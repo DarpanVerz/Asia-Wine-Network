@@ -173,13 +173,6 @@
         </div>
         {% endif %}
 
-        {% comment %} heade menus right start {% endcomment %}
-        {%- for block in section.blocks -%}
-          {%- if block.type == 'menu' and block.settings.links_right != blank -%}
-            {%- render 'header-dropdown-menu-right', block: block -%}
-          {%- endif -%}
-        {%- endfor -%}
-        {% comment %} heade menus right End {% endcomment %}
 
         <div class="header__icons{% if section.settings.enable_country_selector or section.settings.enable_language_selector %} header__icons--localization header-localization{% endif %}">
           <div class="desktop-localization-wrapper">
