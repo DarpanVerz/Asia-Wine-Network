@@ -679,6 +679,15 @@
                 {% if product.metafields.custom.awards != blank %}
                 <div class="pro_meta_object awards_part">
                     <h2>{{ block.settings.heading | default:"Awards"}}</h2>
+
+                    <div class="img_with_text_part">
+                      {% for meta_data in product.metafields.custom.awards.value %}
+                        <div class="img_text">
+                          {% if meta_data.image != blank %}<div class="img"><img src="{{ meta_data.image }}"/></div>{% endif %}
+                          {% if meta_data.title != blank %}<div class="text">{{ meta_data.title }}</div>{% endif %}
+                        </div>
+                      {% endfor %}
+                    </div>
                 </div>
                 {% endif %}
             {%- endcase -%}
