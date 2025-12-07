@@ -674,6 +674,11 @@
                 </product-recommendations>
               {%- when 'icon-with-text' -%}
                 {% render 'icon-with-text', block: block %}
+
+              {%- when 'awards' -%}
+                <div class="pro_meta_object awards_part">
+                    <h2>{{ block.settings.heading | default:"Awards"}}</h2>
+                </div>
             {%- endcase -%}
           {%- endfor -%}
           <a href="{{ product.url }}" class="link product__view-details animate-arrow">
