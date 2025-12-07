@@ -683,7 +683,7 @@
                     <div class="img_with_text_part">
                       {% for meta_data in product.metafields.custom.awards.value %}
                         <div class="img_text">
-                          {% if meta_data.image != blank %}<div class="img"><img src="{{ meta_data.image }}"/></div>{% endif %}
+                          {% if meta_data.image != blank %}<div class="img"><img src="{{ meta_data.image | img_url:''}}"/></div>{% endif %}
                           {% if meta_data.title != blank %}<div class="text">{{ meta_data.title }}</div>{% endif %}
                         </div>
                       {% endfor %}
