@@ -368,10 +368,8 @@ customElements.define('facet-remove', FacetRemove);
 
 //Ak custom code
 document.addEventListener('DOMContentLoaded', function() {
-  console.log('hihih')
 //collection page showing products dropdown
 const limitSelect = document.getElementById('limit');
-
 if(limitSelect){
   limitSelect.addEventListener('change', function() {
     const url = new URL(window.location.href);
@@ -381,14 +379,5 @@ if(limitSelect){
     window.location.href = url.toString();
   });
 }
-
-// document.querySelectorAll('.category-toggle').forEach(toggle => {
-//   console.log('hih')
-//   toggle.addEventListener('click', function() {
-//     console.log('hkhkhk')
-//     const parentLi = this.closest('li');
-//     parentLi.classList.toggle('expanded');
-//   });
-// });
 });
 //AK custom code
