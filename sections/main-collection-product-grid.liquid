@@ -36,6 +36,25 @@
   }
 {%- endstyle -%}
 
+{%- capture contentForQuerystring -%}{{ content_for_header }}{%- endcapture -%}
+ {%- assign pageUrl = contentForQuerystring
+ | split: '"pageurl":"'
+ | last
+ | split: '"'
+ | first
+ | split: '.myshopify.com'
+ | last
+ | replace: '\/', '/'
+ | replace: '%20', ' '
+ | replace: '\u0026', '&'
+ -%}
+ {% capture finalurl %}https://{{ pageUrl }}{% endcapture %}
+
+{% assign limit = section.settings.products_per_page %}
+{% if finalurl contains 'limit' %}
+  {% assign limit = finalurl | split: 'limit=' | last | split: '&' | first | plus: 0 | default: 18 %}
+{% endif %}
+
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}">
   {%- paginate collection.products by section.settings.products_per_page -%}
     {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
