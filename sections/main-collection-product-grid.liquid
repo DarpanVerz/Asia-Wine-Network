@@ -74,6 +74,33 @@
           </div>
 
           <div class="product-count-vertical light" role="status">
+            <form method="get" id="product-count-form">
+              <div class="facet-filters__field">
+                <h2 class="facet-filters__label caption-large text-body">
+                  <label for="limit">{{ 'products.facets.showing_by_label' | t }}</label>
+                </h2>
+                <div class="select">
+                  <select class="facet-filters__sort select__select caption-large" name="limit" id="limit" onchange="this.form.submit()">
+                    <option value="9" {% if limit == 9 %}selected{% endif %}>9</option>
+                    <option value="12" {% if limit == 12 %}selected{% endif %}>12</option>
+                    <option value="18" {% if limit == 18 %}selected{% endif %}>18</option>
+                    <option value="36" {% if limit == 36 %}selected{% endif %}>36</option>
+                  </select>
+                  <span class="svg-wrapper">
+                    <svg width="13" height="7" viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M6.14551 6.99316C5.89941 6.99316 5.68066 6.91113 5.5166 6.74707L0.266602 1.49707C-0.0888672 1.16895 -0.0888672 0.594727 0.266602 0.266602C0.594727 -0.0888672 1.16895 -0.0888672 1.49707 0.266602L6.14551 4.8877L10.7666 0.266602C11.0947 -0.0888672 11.6689 -0.0888672 11.9971 0.266602C12.3525 0.594727 12.3525 1.16895 11.9971 1.49707L6.74707 6.74707C6.58301 6.91113 6.36426 6.99316 6.14551 6.99316Z" fill="#242424"/> </svg>
+                  </span>
+                </div>
+              </div>
+            
+              {%- comment -%}
+                Keep other query params like sort_by, page, etc.
+              {%- endcomment -%}
+              {% for param in request.query %}
+                {% unless param[0] == 'limit' %}
+                  <input type="hidden" name="{{ param[0] }}" value="{{ param[1] }}">
+                {% endunless %}
+              {% endfor %}
+            </form>
             <h2 class="product-count__text text-body">
               <span id="ProductCountDesktop">
                 {%- if collection.results_count -%}
