@@ -24,24 +24,16 @@ h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5{color:rgb(var(--color-title));}
 
 
 /*================ Header ================*/
-.announcement-wrap{
-    display: grid;
-    grid-template-areas: "contact-info announcement icons" / minmax(0, 1fr) fit-content(70%) minmax(0, 1fr);
-    grid-template-columns: 1fr auto 1fr;
-    column-gap: 1rem;
-}
+.announcement-wrap{display:flex;align-items:center;column-gap: 1rem;}
 .announcement-wrap .header__contact {
-grid-area: contact-info;
-justify-self: start;
+flex:1 1 25%;
 }
 .announcement-wrap .header__icons {
-grid-area: icons;
-justify-self: end;
+flex:1 1 25%;
 }
 
 .announcement-wrap .header__announcement {
-grid-area: announcement;
-justify-self: center;
+flex:1 1 50%;
 }
 
 
