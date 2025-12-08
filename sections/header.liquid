@@ -574,65 +574,6 @@
   </script>
 {%- endif -%}
 
-{%- style -%}
-
-@media screen and (min-width: 990px) {
-
-  #shopify-section-{{ section.id }} .header--middle-center:not(.drawer-menu) {
-
-    display: grid;
-
-    grid-template-areas: "navigation-left heading navigation-right icons";
-
-    grid-template-columns: 1fr auto 1fr auto;
-
-    column-gap: 2rem;
-
-    align-items: center;
-
-  }
-
-
-  #shopify-section-{{ section.id }} .header__inline-menu:first-of-type {
-
-    grid-area: navigation-left;
-
-    justify-self: start;
-
-  }
-
-
-  #shopify-section-{{ section.id }} .header__inline-menu:last-of-type {
-
-    grid-area: navigation-right;
-
-    justify-self: end;
-
-  }
-
-
-
-  #shopify-section-{{ section.id }} .header__heading {
-
-    grid-area: heading;
-
-    justify-self: center;
-
-  }
-
-
-
-  #shopify-section-{{ section.id }} .header__icons {
-
-    grid-area: icons;
-
-    justify-self: end;
-
-  }
-
-}
-{%- endstyle -%}
-
 {% schema %}
 {
   "name": "t:sections.header.name",
@@ -838,22 +779,6 @@
           "id": "text",
           "default": "t:sections.announcement-bar.blocks.announcement.settings.text.default",
           "label": "t:sections.announcement-bar.blocks.announcement.settings.text.label"
-        }
-      ]
-    },
-    {
-      "type": "menu",
-      "name": "Menu",
-      "settings": [
-        {
-          "type": "link_list",
-          "id": "links_right",
-          "label": "Menu Right"
-        },
-        {
-          "type": "link_list",
-          "id": "menu_mobile",
-          "label": "Menu Mobile Drawer"
         }
       ]
     }
