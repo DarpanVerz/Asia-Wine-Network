@@ -48,6 +48,7 @@ h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5{color:rgb(var(--color-title));}
 .header__inline-menu .link{font-size:1.6rem;letter-spacing:0.025em;}
 .header__inline-menu .link:hover, .header__active-menu-item{color:rgb(var(--color-link-hover));}
 .header__menu-item:hover span, .header__active-menu-item, details[open]>.header__menu-item{text-decoration:none;}
+.header__submenu .header__menu-item{padding:.8rem 2.8rem;letter-spacing:0.03em;}
 
 
 /*================ Homepage ================*/
