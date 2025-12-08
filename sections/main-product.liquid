@@ -92,13 +92,10 @@
                 {% for block in section.blocks %}
                   {% if block.type == 'left_product_tab' %}
                     {% if block.setting.tab_title != blank and block.settings.tab_content != blank %}
-                      <button class="tab-btn {% if forloop.first %} active{% endif %}" data-tab="pro-tab{{ forloop.index }}">Oak</button>
+                      <button class="tab-btn {% if forloop.first %} active{% endif %}" data-tab="pro-tab{{ forloop.index }}">{{ block.setting.tab_title }}</button>
                     {% endif %}
                   {% endif %}
                 {% endfor %}
-                <button class="tab-btn active" data-tab="tab1">Oak</button>
-                <button class="tab-btn" data-tab="tab2">Walnut</button>
-                <button class="tab-btn" data-tab="tab3">Black</button>
               </div>
 
               <div class="tab-contents">
