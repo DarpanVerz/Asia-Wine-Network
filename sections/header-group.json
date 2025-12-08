@@ -39,13 +39,6 @@
     "header": {
       "type": "header",
       "blocks": {
-        "menu_Afrrqe": {
-          "type": "menu",
-          "settings": {
-            "links_right": "main-menu-2",
-            "menu_mobile": "main-menu-mobile"
-          }
-        },
         "announcement_r9aBEC": {
           "type": "announcement",
           "settings": {
@@ -60,11 +53,11 @@
         }
       },
       "block_order": [
-        "menu_Afrrqe",
         "announcement_r9aBEC",
         "announcement_bQ86xW"
       ],
       "settings": {
+        "icon": "shopify://shop_images/phone.svg",
         "contact_text": "<p>Wine Assistance: (65) 6273 3350</p>",
         "auto_rotate": false,
         "change_slides_speed": 5,
