@@ -295,7 +295,7 @@
         </div>
         {% endif %}
 
-        <div class="header__icons large-up-hide{% if section.settings.enable_country_selector or section.settings.enable_language_selector %} header__icons--localization header-localization{% endif %}">
+        <div class="header__icons small-hide medium-hide{% if section.settings.enable_country_selector or section.settings.enable_language_selector %} header__icons--localization header-localization{% endif %}">
           {{ header_icons }}
         </div>
       </div>
@@ -365,7 +365,7 @@
       endif
     %}
 
-    <div class="header__icons small-hide medium-hide{% if section.settings.enable_country_selector or section.settings.enable_language_selector %} header__icons--localization header-localization{% endif %}">
+    <div class="header__icons large-up-hide{% if section.settings.enable_country_selector or section.settings.enable_language_selector %} header__icons--localization header-localization{% endif %}">
       {{ header_icons }}
     </div>
     
