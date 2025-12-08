@@ -377,9 +377,9 @@
     {%- liquid
       if section.settings.menu != blank
         if section.settings.menu_type_desktop == 'dropdown'
-          render 'header-dropdown-menu', main_menu: main_menu, limit: link_count_half
+          render 'header-dropdown-menu', main_menu: main_menu, offset: link_count_half, limit: link_count_half
         elsif section.settings.menu_type_desktop != 'drawer'
-          render 'header-mega-menu', main_menu: main_menu, limit: link_count_half
+          render 'header-mega-menu', main_menu: main_menu, offset: link_count_half, limit: link_count_half
         endif
       endif
     %}
