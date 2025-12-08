@@ -312,14 +312,12 @@
         render 'header-search', input_id: 'Search-In-Modal-1'
       endif {% endcomment %}
 
-    {%- for block in section.blocks -%}
-      {%- if block.type == 'menu' -%}
-        {%- render 'header-drawer', block: block -%}
-      {%- endif -%}
-    {%- endfor -%}
+    {%- liquid
+      if section.settings.menu != blank
+        render 'header-drawer'
+      endif
 
-      {%- liquid
-       if section.settings.menu == blank
+      if section.settings.menu == blank
         render 'header-search', input_id: 'Search-In-Modal-1'
       endif
     -%}
