@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5{color:rgb(var(--color-title));}
 .announcement-wrap .header__icons {flex:1 1 25%;justify-content:end;}
 .announcement-wrap .header__announcement {flex:1 1 50%;width:50%;}
 .header__announcement .swiper-button-prev, .header__announcement .swiper-button-next{color:#fff;}
-.header__announcement .swiper-slide:not(.swiper-slide-active){opacity:0;}
+.header__announcement .swiper-slide:not(.swiper-slide-active){opacity:0 !important;}
 
 
 /*================ Homepage ================*/
