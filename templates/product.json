@@ -72,13 +72,6 @@
           "settings": {
             "heading": "Food Pairing"
           }
-        },
-        "left_product_tab_Yp6NzY": {
-          "type": "left_product_tab",
-          "settings": {
-            "tab_title": "Wine Profile",
-            "tab_content": "<p>{{ product.metafields.custom.wine_profile | metafield_tag }}</p>"
-          }
         }
       },
       "block_order": [
@@ -92,8 +85,7 @@
         "share",
         "awards_H9qyNB",
         "tasting_notes_VcFPtb",
-        "food_pairing_mc3QkN",
-        "left_product_tab_Yp6NzY"
+        "food_pairing_mc3QkN"
       ],
       "settings": {
         "enable_sticky_info": true,
