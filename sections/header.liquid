@@ -138,7 +138,7 @@
   <div class="custom-announcement-bar color-{{ section.settings.announcement_color_scheme }} gradient">
     <div class="page-width">
       <div class="announcement-wrap">
-        <div class="header__contact">
+        <div class="header__contact medium-hide small-hide">
           {% if section.settings.icon != blank %}
             {{- section.settings.icon | image_url: width: section.settings.icon.width | image_tag: loading: 'lazy', sizes: sizes, widths: '30' -}}
           {% endif %}
