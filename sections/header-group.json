@@ -42,6 +42,7 @@
         "announcement_r9aBEC": {
           "type": "announcement",
           "settings": {
+            "icon": "shopify://shop_images/delivery_van.svg",
             "text": "Free Delivery for Orders Above $50"
           }
         },
