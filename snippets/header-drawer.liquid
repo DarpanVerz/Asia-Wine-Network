@@ -21,8 +21,7 @@
         <div class="menu-drawer__navigation-container">
           <nav class="menu-drawer__navigation">
             <ul class="menu-drawer__menu has-submenu list-menu" role="list">
-              {% comment %} {%- for link in section.settings.menu.links -%} {% endcomment %}
-               {%- for link in linklists[block.settings.menu_mobile].links -%}
+              {%- for link in section.settings.menu.links -%}
                 <li>
                   {%- if link.links != blank -%}
                     <details id="Details-menu-drawer-menu-item-{{ forloop.index }}">
