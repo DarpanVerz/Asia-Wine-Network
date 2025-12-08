@@ -5,9 +5,18 @@
   {% render 'header-mega-menu' %}
 {% endcomment %}
 
+{%- liquid
+  unless limit
+    assign limit = main_menu.links.size
+  endunless
+  unless offset
+    assign offset = 0
+  endunless
+-%}
+
 <nav class="header__inline-menu">
   <ul class="list-menu list-menu--inline" role="list">
-    {%- for link in section.settings.menu.links -%}
+    {%- for link in main_menu.links limit: limit offset: offset -%}
       <li>
         {%- if link.links != blank -%}
           <header-menu>
