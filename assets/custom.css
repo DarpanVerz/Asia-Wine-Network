@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5{color:rgb(var(--color-title));}
 .swiper-button-prev.swiper-button-disabled:hover, .swiper-button-next.swiper-button-disabled:hover{color:#0E334D;}
 
 /*================ Header ================*/
-.announcement-wrap{width:100%;display:flex;align-items:center;column-gap: 1rem;}
+.announcement-wrap{width:100%;display:flex;align-items:center;column-gap: 1rem;font-size:1.3rem;}
 .announcement-wrap .header__contact {flex:1 1 25%;}
 .announcement-wrap .header__icons {flex:1 1 25%;justify-content:end;}
 .announcement-wrap .header__announcement {flex:1 1 50%;width:50%;}
