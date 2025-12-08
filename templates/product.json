@@ -77,7 +77,7 @@
           "type": "left_product_tab",
           "settings": {
             "tab_title": "Wine Profile",
-            "tab_content": ""
+            "tab_content": "<p>{{ product.metafields.custom.wine_profile | metafield_tag }}</p>"
           }
         }
       },
