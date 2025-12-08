@@ -217,11 +217,21 @@
                   {%- if customer and customer.has_avatar? -%}
                     {{ customer | avatar }}
                   {%- else -%}
-                    <span class="svg-wrapper">{{ 'icon-account.svg' | inline_asset_content }}</span>
+                    <span class="svg-wrapper">
+                      <svg class="icon icon-account" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.0007 9.16671C13.0257 9.16671 14.6673 7.52508 14.6673 5.50004C14.6673 3.475 13.0257 1.83337 11.0007 1.83337C8.97561 1.83337 7.33398 3.475 7.33398 5.50004C7.33398 7.52508 8.97561 9.16671 11.0007 9.16671Z" stroke="currentColor" stroke-width="2"/>
+                        <path d="M18.3337 16.0417C18.3337 18.3199 18.3337 20.1667 11.0003 20.1667C3.66699 20.1667 3.66699 18.3199 3.66699 16.0417C3.66699 13.7635 6.95024 11.9167 11.0003 11.9167C15.0504 11.9167 18.3337 13.7635 18.3337 16.0417Z" stroke="currentColor" stroke-width="2"/>
+                      </svg>
+                    </span>
                   {%- endif -%}
                 </account-icon>
               {%- else -%}
-                <span class="svg-wrapper">{{ 'icon-account.svg' | inline_asset_content }}</span>
+                <span class="svg-wrapper">
+                  <svg class="icon icon-account" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.0007 9.16671C13.0257 9.16671 14.6673 7.52508 14.6673 5.50004C14.6673 3.475 13.0257 1.83337 11.0007 1.83337C8.97561 1.83337 7.33398 3.475 7.33398 5.50004C7.33398 7.52508 8.97561 9.16671 11.0007 9.16671Z" stroke="currentColor" stroke-width="2"/>
+                    <path d="M18.3337 16.0417C18.3337 18.3199 18.3337 20.1667 11.0003 20.1667C3.66699 20.1667 3.66699 18.3199 3.66699 16.0417C3.66699 13.7635 6.95024 11.9167 11.0003 11.9167C15.0504 11.9167 18.3337 13.7635 18.3337 16.0417Z" stroke="currentColor" stroke-width="2"/>
+                  </svg>
+                </span>
               {%- endif -%}
               <span class="visually-hidden">
                 {%- liquid
