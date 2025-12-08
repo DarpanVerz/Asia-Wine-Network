@@ -120,6 +120,10 @@
     assign header_tag = 'sticky-header'
   endif
 
+  assign link_count = 0
+  for link in section.settings.menu.links
+    assign link_count = link_count | plus: 1
+  endfor
   assign link_count_half = link_count | divided_by: 2
 %}
 
