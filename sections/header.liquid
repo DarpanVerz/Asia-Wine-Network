@@ -313,7 +313,7 @@
       endif {% endcomment %}
 
     {%- for block in section.blocks -%}
-      {%- if block.type == 'menu' and block.settings.menu_mobile != blank -%}
+      {%- if block.type == 'menu' -%}
         {%- render 'header-drawer', block: block -%}
       {%- endif -%}
     {%- endfor -%}
