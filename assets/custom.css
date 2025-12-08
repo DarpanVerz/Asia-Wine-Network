@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5{color:rgb(var(--color-title));}
 .header__announcement .announcement-bar-swiper{display:flex;align-items:center;}
 .header__announcement .swiper-button-prev, .header__announcement .swiper-button-next{color:#fff;margin:0;top:auto;}
 .header__announcement .swiper-slide:not(.swiper-slide-active){opacity:0 !important;}
-.header__announcement .announcement-bar__message{min-height:inherit;}
+.header__announcement .announcement-bar__message{min-height:inherit;display:flex;align-items:center;gap:8px;}
 
 .header__inline-menu .list-menu--inline{gap:1.6rem;}
 .header__menu-item{color:rgb(var(--color-foreground));}
