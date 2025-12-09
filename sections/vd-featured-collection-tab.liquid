@@ -64,7 +64,6 @@
         </h2>
       {%- endif -%}
       {% if tab_title %}
-      <div class="tab-menu-wrap">
         <div class="tab-menu">
           {%- for block in section.blocks -%}
             <div class="tab-a{% if forloop.first %} active-a{% endif %}" data-id="tab{{ forloop.index }}">
@@ -72,7 +71,6 @@
             </div>
           {%- endfor -%}
         </div>
-      </div>
       {% endif %}
     </div>
 
