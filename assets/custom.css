@@ -48,7 +48,7 @@ h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5{color:rgb(var(--color-title));}
 .header__inline-menu .link{font-size:1.6rem;letter-spacing:0.025em;}
 .header__inline-menu .link:hover, .header__active-menu-item{color:rgb(var(--color-link-hover));}
 .header__menu-item:hover span, .header__active-menu-item, details[open]>.header__menu-item{text-decoration:none;}
-.header__submenu.list-menu{padding:0;top:var(--main-header);}
+.header__submenu.list-menu{padding:0;top:calc(var(--main-header) - 12px);}
 .header__submenu .header__menu-item{padding:1.4rem 2.7rem;letter-spacing:0.03em;}
 .header__submenu .header__menu-item:hover{background-color:#E5F1F9;color:rgb(var(--color-foreground));text-decoration:none;}
 
