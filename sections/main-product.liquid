@@ -114,11 +114,11 @@
                         {{ product.metafields.custom.wine_profile }}
                       </div>
                   {% elsif block.type == 'left_product_tab_1' and product.metafields.custom.vineyard_harvest != blank %}
-                      <div class="tab-content {% if forloop.first %} active{% endif %}" id="pro-tab{{ forloop.index }}">
+                      <div class="tab-content {% if product.metafields.custom.wine_profile == blank %} active{% endif %}" id="pro-tab{{ forloop.index }}">
                         {{ product.metafields.custom.vineyard_harvest }}
                       </div>
                   {% elsif block.type == 'left_product_tab_2' and product.metafields.custom.winemaking != blank %}
-                     <div class="tab-content {% if forloop.first %} active{% endif %}" id="pro-tab{{ forloop.index }}">
+                     <div class="tab-content {% if product.metafields.custom.wine_profile == blank and product.metafields.custom.vineyard_harvest == blank %} active{% endif %}" id="pro-tab{{ forloop.index }}">
                         {{ product.metafields.custom.winemaking }}
                       </div>
                   {% endif %}
