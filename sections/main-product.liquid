@@ -109,13 +109,27 @@
 
               <div class="tab-contents">
                 {% for block in section.blocks %}
-                   {% if block.type == 'left_product_tab' %}
+                  {% if block.type == 'left_product_tab' and product.metafields.custom.wine_profile != blank %}
+                     <div class="tab-content {% if forloop.first %} active{% endif %}" id="pro-tab{{ forloop.index }}">
+                        {{ product.metafields.custom.wine_profile }}
+                      </div>
+                  {% elsif block.type == 'left_product_tab_1' and product.metafields.custom.vinyard_harvest != blank %}
+                      <div class="tab-content {% if forloop.first %} active{% endif %}" id="pro-tab{{ forloop.index }}">
+                        {{ product.metafields.custom.vinyard_harvest }}
+                      </div>
+                  {% elsif block.type == 'left_product_tab_2' and product.metafields.custom.winemaking != blank %}
+                     <div class="tab-content {% if forloop.first %} active{% endif %}" id="pro-tab{{ forloop.index }}">
+                        {{ product.metafields.custom.winemaking }}
+                      </div>
+                  {% endif %}
+
+                   {% comment %} {% if block.type == 'left_product_tab' %}
                     {% if block.settings.title != blank and block.settings.tab_content != blank %}
                       <div class="tab-content {% if forloop.first %} active{% endif %}" id="pro-tab{{ forloop.index }}">
                         {{ block.settings.tab_content }}
                       </div>
                     {% endif %}
-                   {% endif %}
+                   {% endif %} {% endcomment %}
                 {% endfor %}
               </div>
           </div>
