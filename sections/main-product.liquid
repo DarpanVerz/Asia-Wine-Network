@@ -92,8 +92,8 @@
               <div class="tab-buttons">
                 {% for block in section.blocks %}
                   {% if block.type == 'left_product_tab' %}
-                    {% if block.settings.tab_title != blank and block.settings.tab_content != blank %}
-                      <button class="tab-btn {% if forloop.first %} active{% endif %}" data-tab="pro-tab{{ forloop.index }}">{{ block.settings.tab_title }}</button>
+                    {% if block.settings.title != blank and block.settings.tab_content != blank %}
+                      <button class="tab-btn {% if forloop.first %} active{% endif %}" data-tab="pro-tab{{ forloop.index }}">{{ block.settings.title }}</button>
                     {% endif %}
                   {% endif %}
                 {% endfor %}
@@ -102,7 +102,7 @@
               <div class="tab-contents">
                 {% for block in section.blocks %}
                    {% if block.type == 'left_product_tab' %}
-                    {% if block.settings.tab_title != blank and block.settings.tab_content != blank %}
+                    {% if block.settings.title != blank and block.settings.tab_content != blank %}
                       <div class="tab-content {% if forloop.first %} active{% endif %}" id="pro-tab{{ forloop.index }}">
                         {{ block.settings.tab_content }}
                       </div>
@@ -2218,7 +2218,7 @@
       "settings": [
         {
           "type": "text",
-          "id":"tab_title",
+          "id":"title",
           "label": "Tab Title"
         },
         {
