@@ -50,6 +50,8 @@ h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5{color:rgb(var(--color-title));}
 .header__menu-item:hover span, .header__active-menu-item, details[open]>.header__menu-item{text-decoration:none;}
 .header__submenu.list-menu{padding:0;top:calc(var(--main-header) - 12px);}
 .header__submenu .header__menu-item{padding:1.4rem 2.7rem;letter-spacing:0.03em;}
+.header__submenu li:first-child .header__menu-item{border-top-left-radius:var(--popup-corner-radius);border-top-right-radius:var(--popup-corner-radius);}
+.header__submenu li:last-child .header__menu-item{border-bottom-left-radius:var(--popup-corner-radius);border-bottom-right-radius:var(--popup-corner-radius);}
 .header__submenu .header__menu-item:hover{background-color:#E5F1F9;color:rgb(var(--color-foreground));text-decoration:none;}
 
 
