@@ -53,11 +53,11 @@
   class="color-{{ section.settings.color_scheme }} isolate gradient"
 >
   <div
-    class="tab-container collection{% if section.settings.quick_add == 'bulk' %} collection-quick-add-bulk{% endif %} section-{{ section.id }}-padding"
+    class="tab-container page-width collection{% if section.settings.quick_add == 'bulk' %} collection-quick-add-bulk{% endif %} section-{{ section.id }}-padding"
     id="collection-{{ section.id }}"
     data-id="{{ section.id }}"
   >
-    <div class="collection__title title-wrapper-with-link title-wrapper--no-top-margin page-width">
+    <div class="collection__title title-wrapper-with-link title-wrapper--no-top-margin">
       {%- if section.settings.title != blank -%}
         <h2 class="title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
           {{ section.settings.title }}
@@ -76,10 +76,9 @@
       {% endif %}
     </div>
 
-    <div class="page-width">
-        {%- for block in section.blocks -%}
-        <div class="tab{% if forloop.first %} tab-active{% endif %}" data-id="tab{{ forloop.index }}">
-      <div class="product-tab-swiper swiper product-grid contains-card contains-card--product{% if settings.card_style == 'standard' %} contains-card--standard{% endif %}">
+    {%- for block in section.blocks -%}
+    <div class="tab{% if forloop.first %} tab-active{% endif %}" data-id="tab{{ forloop.index }}">
+        <div class="product-tab-swiper swiper product-grid contains-card contains-card--product{% if settings.card_style == 'standard' %} contains-card--standard{% endif %}">
             <div class="swiper-wrapper">
                 
                 {% assign lazy_load = false %}
@@ -123,13 +122,11 @@
                 </div>
                 {%- endfor -%}
               {%- endfor -%}
+            </div>
         </div>
-    </div>
     </div>
     {%- endfor -%}
     
-    </div>
-
   </div>
 </div>
 
