@@ -22,8 +22,8 @@ h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5{color:rgb(var(--color-title));}
 .button.button--secondary:disabled, .button.button--secondary[aria-disabled=true], .button.button--secondary.disabled{color: #C9C9C9;border-color: #C9C9C9;opacity: 1;}
 .button.button--secondary:disabled:hover, .button.button--secondary[aria-disabled=true]:hover, .button.button--secondary.disabled:hover{background: transparent;color: #C9C9C9;border-color: #C9C9C9;opacity: 1;}
 
-.field__input, .select__select, .customer .field input, .customer select{height:5rem;font-weight:300;letter-spacing:0.03em;}
-.field__label, .customer .field label{font-weight:300;letter-spacing:0.03em;}
+.field__input, .select__select, .customer .field input, .customer select{height:5rem;color:rgb(var(--color-foreground));font-weight:300;letter-spacing:0.03em;}
+.field__label, .customer .field label{color:rgba(var(--color-foreground),.5);font-weight:300;letter-spacing:0.03em;top:calc(1.2rem + var(--inputs-border-width));}
 
 .swiper:not(.swiper-initialized){display:none;}
 .swiper-button-prev, .swiper-button-next{width: 8px;height: 13px;color:#0E334D;}
