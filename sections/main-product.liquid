@@ -110,7 +110,7 @@
               <div class="tab-contents">
                 {% for block in section.blocks %}
                   {% if block.type == 'left_product_tab' and product.metafields.custom.wine_profile != blank %}
-                     <div class="tab-content {% if forloop.first %} active{% endif %}" id="pro-tab{{ forloop.index }}">
+                     <div class="tab-content  active" id="pro-tab{{ forloop.index }}">
                         {{ product.metafields.custom.wine_profile }}
                       </div>
                   {% elsif block.type == 'left_product_tab_1' and product.metafields.custom.vineyard_harvest != blank %}
