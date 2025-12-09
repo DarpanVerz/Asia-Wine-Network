@@ -77,15 +77,23 @@
     "vd_featured_collection_tab_gBmAUX": {
       "type": "vd-featured-collection-tab",
       "blocks": {
-        "tab_EJnGE3": {
+        "tab_6mX8JJ": {
           "type": "tab",
           "settings": {
             "tab_title": "Tab 1",
             "collection": ""
           }
+        },
+        "tab_EJnGE3": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Tab 2",
+            "collection": ""
+          }
         }
       },
       "block_order": [
+        "tab_6mX8JJ",
         "tab_EJnGE3"
       ],
       "name": "Featured collection tab",
