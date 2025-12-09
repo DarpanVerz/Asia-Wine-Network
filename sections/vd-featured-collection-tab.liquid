@@ -195,14 +195,6 @@
             slidesPerView: 4,
             spaceBetween: 24,
           },
-        },
-        on: {
-          afterInit: function () {
-            centerSlidesIfNeeded(this);
-          },
-          resize: function () {
-            centerSlidesIfNeeded(this);
-          }
         }
       });
   
@@ -211,39 +203,6 @@
       }
     }
   
-    function centerSlidesIfNeeded(swiper) {
-      const wrapper = swiper.el.querySelector('.swiper-wrapper');
-      const totalSlides = swiper.slides.length;
-  
-      let slidesPerView = swiper.params.slidesPerView;
-      let spaceBetween = swiper.params.spaceBetween;
-  
-      if (typeof slidesPerView === 'object') {
-        const breakpoints = swiper.params.breakpoints;
-        const width = window.innerWidth;
-  
-        slidesPerView = swiper.originalParams.slidesPerView;
-        spaceBetween = swiper.originalParams.spaceBetween;
-  
-        const sorted = Object.keys(breakpoints).map(Number).sort((a, b) => a - b);
-        sorted.forEach(bp => {
-          if (width >= bp) {
-            slidesPerView = breakpoints[bp].slidesPerView;
-            spaceBetween = breakpoints[bp].spaceBetween;
-          }
-        });
-      }
-  
-      if (totalSlides < slidesPerView) {
-        wrapper.style.display = 'flex';
-        wrapper.style.justifyContent = 'center';
-        wrapper.style.marginLeft = (spaceBetween / 2) + 'px';
-      } else {
-        wrapper.style.display = '';
-        wrapper.style.justifyContent = '';
-        wrapper.style.marginLeft = '';
-      }
-    }
   });
 </script>
 
