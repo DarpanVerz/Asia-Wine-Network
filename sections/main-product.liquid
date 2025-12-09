@@ -93,7 +93,7 @@
                 {% for block in section.blocks %}
                   {% if block.type == 'left_product_tab' and product.metafields.custom.wine_profile != blank %}
                      <button class="tab-btn {% if forloop.first %} active{% endif %}" data-tab="pro-tab{{ forloop.index }}">{{ block.settings.title | default:"Wine Profile"}}</button>
-                  {% elsif block.type == 'left_product_tab_1' and product.metafields.custom.vinyard_harvest != blank %}
+                  {% elsif block.type == 'left_product_tab_1' and product.metafields.custom.vineyard_harvest != blank %}
                      <button class="tab-btn {% if forloop.first %} active{% endif %}" data-tab="pro-tab{{ forloop.index }}">{{ block.settings.title | default:"Vinyard & Harvest" }}</button>
                   {% elsif block.type == 'left_product_tab_2' and product.metafields.custom.winemaking != blank %}
                      <button class="tab-btn {% if forloop.first %} active{% endif %}" data-tab="pro-tab{{ forloop.index }}">{{ block.settings.title | default:"Winemaking" }}</button>
@@ -113,9 +113,9 @@
                      <div class="tab-content {% if forloop.first %} active{% endif %}" id="pro-tab{{ forloop.index }}">
                         {{ product.metafields.custom.wine_profile }}
                       </div>
-                  {% elsif block.type == 'left_product_tab_1' and product.metafields.custom.vinyard_harvest != blank %}
+                  {% elsif block.type == 'left_product_tab_1' and product.metafields.custom.vineyard_harvest != blank %}
                       <div class="tab-content {% if forloop.first %} active{% endif %}" id="pro-tab{{ forloop.index }}">
-                        {{ product.metafields.custom.vinyard_harvest }}
+                        {{ product.metafields.custom.vineyard_harvest }}
                       </div>
                   {% elsif block.type == 'left_product_tab_2' and product.metafields.custom.winemaking != blank %}
                      <div class="tab-content {% if forloop.first %} active{% endif %}" id="pro-tab{{ forloop.index }}">
