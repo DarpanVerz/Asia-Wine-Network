@@ -92,7 +92,7 @@
               <div class="tab-buttons">
                 {% for block in section.blocks %}
                   {% if block.type == 'left_product_tab' and product.metafields.custom.wine_profile != blank %}
-                     <button class="tab-btn {% if forloop.first %} active{% endif %}" data-tab="pro-tab{{ forloop.index }}">{{ block.settings.title | default:"Wine Profile"}}</button>
+                     <button class="tab-btn active" data-tab="pro-tab{{ forloop.index }}">{{ block.settings.title | default:"Wine Profile"}}</button>
                   {% elsif block.type == 'left_product_tab_1' and product.metafields.custom.vineyard_harvest != blank %}
                      <button class="tab-btn {% if forloop.first %} active{% endif %}" data-tab="pro-tab{{ forloop.index }}">{{ block.settings.title | default:"Vinyard & Harvest" }}</button>
                   {% elsif block.type == 'left_product_tab_2' and product.metafields.custom.winemaking != blank %}
