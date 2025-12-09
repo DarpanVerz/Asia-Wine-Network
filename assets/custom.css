@@ -64,9 +64,9 @@ h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5{color:rgb(var(--color-title));l
 
 
 /*================ Homepage ================*/
-.tab-menu {display: inline-flex; justify-content: flex-end;flex-wrap:wrap; align-items: center;gap:3.4rem;}
+.tab-menu {display: inline-flex; justify-content: flex-end;flex-wrap:wrap; align-items: center;gap:1.7rem;}
 .tab-menu .tab-a {cursor: pointer;color: rgba(var(--color-link), 0.39);font-weight:500;letter-spacing:0.02em;}
-.tab-menu .tab-a:not(:last-child):after{content:'';width:1px;height:16px;background:#C4C0C0;}
+.tab-menu .tab-a:not(:last-child):after{content:'';width:1px;height:16px;background:#C4C0C0;display:inline-flex;vertical-align:center;margin-inline-start:1.7rem;}
 .tab-a.active-a {color:var(--color-link-hover);}
 .tab { display: none !important; }
 .tab.tab-active { display: block !important;}
