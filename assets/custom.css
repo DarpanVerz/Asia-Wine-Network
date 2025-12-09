@@ -25,6 +25,8 @@ h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5{color:rgb(var(--color-title));}
 .field__input, .select__select, .customer .field input, .customer select{height:5rem;color:rgb(var(--color-foreground));font-weight:300;letter-spacing:0.03em;outline: none;}
 .field__label, .customer .field label{color:rgba(var(--color-foreground),.5);font-weight:300;letter-spacing:0.03em;top:calc(1.2rem + var(--inputs-border-width));}
 .field__input:focus, .select__select:focus, .customer .field input:focus, .customer select:focus, .localization-form__select:focus.localization-form__select:after{box-shadow:none;}
+.field__input:focus, .select__select:focus, .customer .field input:focus, .customer select:focus, .localization-form__select:focus.localization-form__select:after{outline: none;box-shadow: none;}
+.field__input:focus-visible, .select__select:focus-visible, .customer .field input:focus-visible, .customer select:focus-visible, .localization-form__select:focus-visible.localization-form__select:after{outline: none;box-shadow: none;}
 
 .swiper:not(.swiper-initialized){display:none;}
 .swiper-button-prev, .swiper-button-next{width: 8px;height: 13px;color:#0E334D;}
