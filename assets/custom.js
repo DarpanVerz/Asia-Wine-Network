@@ -385,3 +385,25 @@ var Swiper=function(){"use strict";function e(e){return null!==e&&"object"==type
     });
 
 });
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+      // Tab switching
+  const tabBtns = document.querySelectorAll(".tab-btn");
+  const contents = document.querySelectorAll(".tab-content");
+
+  tabBtns.forEach(btn => {
+    btn.addEventListener("click", function () {
+
+      // remove old active
+      tabBtns.forEach(b => b.classList.remove("active"));
+      contents.forEach(c => c.classList.remove("active"));
+
+      // add new active
+      this.classList.add("active");
+      document.getElementById(this.dataset.tab).classList.add("active");
+    });
+  });
+});
