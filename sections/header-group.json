@@ -48,6 +48,7 @@
         },
         "announcement_bQ86xW": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "Welcome to our store"
           }
