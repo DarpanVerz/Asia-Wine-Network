@@ -72,7 +72,7 @@ h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5{color:rgb(var(--color-title));l
 .tab { display: none !important; }
 .tab.tab-active { display: block !important;}
 
-.product-card-wrapper .card__information{padding-block:.5rem 2.4rem;}
+.product-card-wrapper .card__information{padding-block:.5rem 2.4rem;padding-inline:1.3rem;}
 .product-card-wrapper .card__vendor{font-size:1.3rem;color: rgba(var(--color-foreground), 0.59);letter-spacing:0.03em;text-transform:capitalize;line-height:1.5385;}
 .product-card-wrapper .card__heading{font-weight:400;line-height:calc(1 + .625/max(1,var(--font-heading-scale)));}
 .product-card-wrapper .card__vendor+.card__heading{padding-block-start:.8rem;}
