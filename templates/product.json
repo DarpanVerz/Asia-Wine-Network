@@ -75,6 +75,7 @@
         },
         "left_product_tab_QWYm7m": {
           "type": "left_product_tab",
+          "disabled": true,
           "settings": {
             "title": "Wine Profile",
             "tab_content": "{{product.metafields.custom.wine_profile | raw }}"
@@ -82,6 +83,7 @@
         },
         "left_product_tab_PV9wkr": {
           "type": "left_product_tab",
+          "disabled": true,
           "settings": {
             "title": "Vineyard & Harvest",
             "tab_content": "{{product.metafields.custom.vineyard_harvest | raw }}"
@@ -89,9 +91,10 @@
         },
         "left_product_tab_8HT4CN": {
           "type": "left_product_tab",
+          "disabled": true,
           "settings": {
             "title": "Winemaking",
-            "tab_content": "{{product.metafields.custom.winemaking | html }}"
+            "tab_content": "{{product.metafields.custom.winemaking | raw }}"
           }
         }
       },
