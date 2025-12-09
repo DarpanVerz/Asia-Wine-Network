@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5{color:rgb(var(--color-title));l
 .button--secondary, .button--tertiary{background-color: transparent;color: rgb(var(--color-secondary-button-text));border-color: rgb(var(--color-secondary-button-border));}
 .button--secondary:hover{background-color: rgb(var(--color-secondary-button-hover));color: rgb(var(--color-secondary-button-text-hover));border-color: rgb(var(--color-secondary-button-border-hover));}
 .button.button--secondary:disabled, .button.button--secondary[aria-disabled=true], .button.button--secondary.disabled{opacity: 0.3;}
-.button.button--secondary:disabled:hover, .button.button--secondary[aria-disabled=true]:hover, .button.button--secondary.disabled:hover{opacity: 0.3;}
+.button.button--secondary:disabled:hover, .button.button--secondary[aria-disabled=true]:hover, .button.button--secondary.disabled:hover{background-color: transparent;color: rgb(var(--color-secondary-button-text));border-color: rgb(var(--color-secondary-button-border));opacity: 0.3;}
 
 .field__input, .select__select, .customer .field input, .customer select{height:5rem;color:rgb(var(--color-foreground));letter-spacing:0.03em;outline: none;}
 .field__label, .customer .field label{color:rgba(var(--color-foreground),.5);font-weight:300;letter-spacing:0.03em;top:calc(1.2rem + var(--inputs-border-width));}
