@@ -78,9 +78,9 @@
     <div class="tab{% if forloop.first %} tab-active{% endif %}" data-id="tab{{ forloop.index }}">
         <div class="product-tab-swiper swiper product-grid contains-card contains-card--product{% if settings.card_style == 'standard' %} contains-card--standard{% endif %}">
             <div class="swiper-wrapper">
-                
+                {%- assign products = block.settings.collection.products -%}
                 {% assign lazy_load = false %}
-              {%- for product in section.settings.collection.products limit: section.settings.products_count -%}
+              {%- for product in products limit: section.settings.products_count -%}
                 {% if lazy_load == false and forloop.index  %}
                     {% assign lazy_load = true %}
                 {% endif %}
