@@ -78,6 +78,7 @@
       <div class="grid__item product__media-wrapper">
         {% render 'product-media-gallery', variant_images: variant_images %}
         
+        {{ product.metafields.custom.wine_profile }}
         {% comment %} AK custom code{% endcomment %}
          {% comment %}
         {% assign have_tab_block = false %}
