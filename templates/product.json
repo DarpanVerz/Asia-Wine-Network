@@ -86,6 +86,13 @@
             "tab_title": "Vineyard & Harvest",
             "tab_content": "{{product.metafields.custom.vineyard_harvest}}"
           }
+        },
+        "left_product_tab_8HT4CN": {
+          "type": "left_product_tab",
+          "settings": {
+            "tab_title": "Winemaking",
+            "tab_content": "{{product.metafields.custom.winemaking}}"
+          }
         }
       },
       "block_order": [
@@ -101,7 +108,8 @@
         "tasting_notes_VcFPtb",
         "food_pairing_mc3QkN",
         "left_product_tab_QWYm7m",
-        "left_product_tab_PV9wkr"
+        "left_product_tab_PV9wkr",
+        "left_product_tab_8HT4CN"
       ],
       "settings": {
         "enable_sticky_info": true,
