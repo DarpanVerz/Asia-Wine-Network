@@ -93,7 +93,7 @@
                 {% for block in section.blocks %}
                   {% if block.type == 'left_product_tab' %}
                     {% if block.settings.tab_title != blank and block.settings.tab_content != blank %}
-                      <button class="tab-btn {% if forloop.first %} active{% endif %}" data-tab="pro-tab{{ forloop.index }}">{{ block.setting.tab_title }}</button>
+                      <button class="tab-btn {% if forloop.first %} active{% endif %}" data-tab="pro-tab{{ forloop.index }}">{{ block.settings.tab_title }}</button>
                     {% endif %}
                   {% endif %}
                 {% endfor %}
