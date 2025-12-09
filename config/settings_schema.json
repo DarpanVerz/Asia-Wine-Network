@@ -323,7 +323,7 @@
         "id": "buttons_border_opacity",
         "min": 0,
         "max": 100,
-        "step": 5,
+        "step": 1,
         "unit": "%",
         "label": "t:settings_schema.global.settings.opacity.label",
         "default": 100
@@ -333,7 +333,7 @@
         "id": "buttons_radius",
         "min": 0,
         "max": 40,
-        "step": 2,
+        "step": 1,
         "unit": "px",
         "label": "t:settings_schema.global.settings.corner_radius.label",
         "default": 0
@@ -347,7 +347,7 @@
         "id": "buttons_shadow_opacity",
         "min": 0,
         "max": 100,
-        "step": 5,
+        "step": 1,
         "unit": "%",
         "label": "t:settings_schema.global.settings.opacity.label",
         "default": 0
