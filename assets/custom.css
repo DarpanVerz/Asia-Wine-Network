@@ -81,6 +81,8 @@ h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5{color:rgb(var(--color-title));l
 }
 
 @media screen and (min-width: 990px) {
+    .title, .title-wrapper-with-link{margin-block-end:4.7rem;}
+
   .header.header--middle-center:not(.drawer-menu) {grid-template-areas: "navigation-left heading navigation-right";grid-template-columns: 1fr auto 1fr;}
   .header .header__inline-menu:first-of-type {grid-area: navigation-left;justify-self: start;}
   .header .header__inline-menu:last-of-type {grid-area: navigation-right;justify-self: end;}
