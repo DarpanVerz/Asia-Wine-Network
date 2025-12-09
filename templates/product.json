@@ -83,7 +83,7 @@
         "left_product_tab_PV9wkr": {
           "type": "left_product_tab",
           "settings": {
-            "title": "",
+            "title": "Vineyard & Harvest",
             "tab_content": "{{product.metafields.custom.vineyard_harvest}}"
           }
         },
