@@ -73,6 +73,7 @@ h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5{color:rgb(var(--color-title));l
 .tab.tab-active { display: block !important;}
 
 .product-card-wrapper .card__information{padding-block-start:.5rem;}
+.card__vendor{color: rgba(var(--color-foreground), 0.59);}
 
 
 /*================ Footer ================*/
