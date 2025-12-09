@@ -79,6 +79,13 @@
             "tab_title": "Wine Profile",
             "tab_content": "{{product.metafields.custom.wine_profile}}"
           }
+        },
+        "left_product_tab_PV9wkr": {
+          "type": "left_product_tab",
+          "settings": {
+            "tab_title": "Vineyard & Harvest",
+            "tab_content": "{{product.metafields.custom.vineyard_harvest}}"
+          }
         }
       },
       "block_order": [
@@ -93,7 +100,8 @@
         "awards_H9qyNB",
         "tasting_notes_VcFPtb",
         "food_pairing_mc3QkN",
-        "left_product_tab_QWYm7m"
+        "left_product_tab_QWYm7m",
+        "left_product_tab_PV9wkr"
       ],
       "settings": {
         "enable_sticky_info": true,
