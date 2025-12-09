@@ -77,6 +77,13 @@ h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5{color:rgb(var(--color-title));l
 .product-card-wrapper .card__heading{font-weight:400;line-height:calc(1 + .625/max(1,var(--font-heading-scale)));}
 .product-card-wrapper .card__vendor+.card__heading{padding-block-start:.8rem;}
 .product-card-wrapper .price{font-size:1.8rem;letter-spacing:0.03em;font-weight:600;padding-block-start:.8rem;}
+.tab .swiper-button-prev, .tab .swiper-button-next{width:50px;height:50px;background:rgba(255,255,255,0.5);color:#2C2C2C;border-radius:50%;transition:all 0.25s ease;}
+.tab .swiper-button-prev:hover, .tab .swiper-button-next:hover{background:#BF864F;color:#fff;}
+.tab .swiper-button-prev svg, .tab .swiper-button-next svg{width:15px;height:24px;}
+.tab .swiper-button-prev svg{margin-inline-start:-1px;}
+.tab .swiper-button-next svg{margin-inline-end:-1px;}
+.tab .swiper-button-prev{left:-25px;}
+.tab .swiper-button-next{right:-25px;}
 
 
 /*================ Footer ================*/
