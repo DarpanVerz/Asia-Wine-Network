@@ -91,7 +91,7 @@
           "type": "left_product_tab",
           "settings": {
             "title": "Winemaking",
-            "tab_content": "{{product.metafields.custom.winemaking}}"
+            "tab_content": "{{product.metafields.custom.winemaking | metafield_tag }}"
           }
         }
       },
