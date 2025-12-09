@@ -302,7 +302,7 @@
     </div>
   </div>
   
-  <header class="header header--middle-center header--mobile-center page-width{% if section.settings.menu != blank %} header--has-menu{% endif %}{% if has_app_block %} header--has-app{% endif %}{% if social_links %} header--has-social{% endif %}{% if shop.customer_accounts_enabled %} header--has-account{% endif %}{% if localization_forms %} header--has-localizations{% endif %}">
+  <header id="main_header" class="header header--middle-center header--mobile-center page-width{% if section.settings.menu != blank %} header--has-menu{% endif %}{% if has_app_block %} header--has-app{% endif %}{% if social_links %} header--has-social{% endif %}{% if shop.customer_accounts_enabled %} header--has-account{% endif %}{% if localization_forms %} header--has-localizations{% endif %}">
 
     {%- liquid
       if section.settings.menu != blank
@@ -492,6 +492,10 @@
 
   customElements.define('sticky-header', StickyHeader);
 {% endjavascript %}
+
+<script>
+  document.documentElement.style.setProperty('--header-heights', document.getElementById('main_header').offsetHeight + 'px');
+</script>
 
 {% if announcement_block %}
 <script>
