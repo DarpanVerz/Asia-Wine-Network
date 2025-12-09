@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5{color:rgb(var(--color-title));}
 .button.button--secondary:disabled, .button.button--secondary[aria-disabled=true], .button.button--secondary.disabled{color: #C9C9C9;border-color: #C9C9C9;opacity: 1;}
 .button.button--secondary:disabled:hover, .button.button--secondary[aria-disabled=true]:hover, .button.button--secondary.disabled:hover{background: transparent;color: #C9C9C9;border-color: #C9C9C9;opacity: 1;}
 
-.field__input, .select__select, .customer .field input, .customer select{height:5rem;font-weight:300;}
+.field__input, .select__select, .customer .field input, .customer select{height:5rem;font-weight:300;letter-spacing:0.03em;}
 
 .swiper:not(.swiper-initialized){display:none;}
 .swiper-button-prev, .swiper-button-next{width: 8px;height: 13px;color:#0E334D;}
