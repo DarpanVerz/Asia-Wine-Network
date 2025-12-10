@@ -50,6 +50,55 @@
   -%}
     {%- unless only_empty_brand -%}
       <div class="footer__content-top page-width">
+
+        {% if section.settings.caption != blank or section.settings.heading != blank or section.settings.text != blank %}
+        <div class="footer-block--contact grid grid--1-col grid--2-col grid--4-col-tablet{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"{% if settings.animations_reveal_on_scroll %} data-cascade{% endif %}>
+          <div
+            class="footer-block grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            {% if settings.animations_reveal_on_scroll %}
+              data-cascade
+              style="--animation-order: 1;"
+            {% endif %}
+            >
+              {% if section.settings.caption != blank %}
+              <p class="footer-block-text__caption">
+                {{ section.settings.caption | escape }}
+              </p>
+              {% endif %}
+              {% if section.settings.heading != blank %}
+              <h2 class="footer-block-text__heading">
+                {{ section.settings.heading }}
+              </h2>
+              {% endif %}
+              {% if section.settings.text != blank %}
+              <div class="footer-block-text__text rte">
+                {{ section.settings.text }}
+              </div>
+              {% endif %}
+          </div>
+          {%- if section.settings.button_label != blank -%}
+          <div
+              class="footer-block grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+              {% if settings.animations_reveal_on_scroll %}
+                data-cascade
+                style="--animation-order: 2;"
+              {% endif %}
+              >
+                <a
+                  {% if section.settings.button_link == blank %}
+                    role="link" aria-disabled="true"
+                  {% else %}
+                    href="{{ section.settings.button_link }}"
+                  {% endif %}
+                  class="button{% if section.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
+                >
+                  {{- section.settings.button_label | escape -}}
+                </a>
+          </div>
+          {%- endif -%}
+        </div>
+        {% endif %}
+
         {%- if section.blocks.size > 0 -%}
           {%- liquid
             if section.blocks.size == 9
