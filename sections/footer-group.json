@@ -17,7 +17,8 @@
         "image_JbJ6B9": {
           "type": "image",
           "settings": {
-            "image_width": 100,
+            "image": "shopify://shop_images/footer_logo.png",
+            "image_width": 285,
             "alignment": "center",
             "icon_1": "shopify://shop_images/location.svg",
             "text_1": "<p>8 Boon Lay Way #07-05 8@Tradehub 21, 609964</p>",
