@@ -450,23 +450,9 @@
           </localization-form>
         {%- endif -%}
       </div>
-      <div class="footer__column footer__column--info">
-        {%- if section.settings.payment_enable -%}
-          <div class="footer__payment">
-            <span class="visually-hidden">{{ 'sections.footer.payment' | t }}</span>
-            <ul class="list list-payment" role="list">
-              {%- for type in shop.enabled_payment_types -%}
-                <li class="list-payment__item">
-                  {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
-                </li>
-              {%- endfor -%}
-            </ul>
-          </div>
-        {%- endif -%}
-      </div>
     </div>
     <div class="footer__content-bottom-wrapper page-width{% if section.settings.enable_country_selector == false and section.settings.enable_language_selector == false %} footer__content-bottom-wrapper--center{% endif %}">
-      <div class="footer__copyright caption">
+      <div class="footer__column footer__copyright caption">
         {% if section.settings.copyright_text %}
           <small class="copyright__content">{{ section.settings.copyright_text }}</small>
         {% else %}
@@ -487,6 +473,35 @@
               {%- endif -%}
             {%- endfor -%}
           </ul>
+        {%- endif -%}
+      </div>
+      <div class="footer__column footer__column--info">
+        {%- if section.settings.payment_enable -%}
+          <div class="footer__payment">
+            <span class="visually-hidden">{{ 'sections.footer.payment' | t }}</span>
+            {% if section.settings.custome_icons %}
+              {% if settings.image1 != blank or settings.image2 != blank or settings.image3 != blank or settings.image4 != blank or settings.image5 != blank or settings.image6 != blank or settings.image7 != blank or settings.image8 != blank or settings.image9 != blank or settings.image10 != blank %}
+              <ul class="list list-payment" role="list">
+                {% for i in (1..10) %}
+                  {% capture payment_icon %}image{{i}}{% endcapture %}
+                  {% if settings[payment_icon] != blank %}
+                    <li class="list-payment__item">
+                      {{- settings[payment_icon] | image_url: width: settings[payment_icon].width | image_tag: loading: 'lazy'-}}
+                    </li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+              {% endif %}
+            {% else %}
+            <ul class="list list-payment" role="list">
+              {%- for type in shop.enabled_payment_types -%}
+                <li class="list-payment__item">
+                  {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
+                </li>
+              {%- endfor -%}
+            </ul>
+            {% endif %}
+          </div>
         {%- endif -%}
       </div>
     </div>
@@ -746,6 +761,13 @@
       "id": "payment_enable",
       "default": true,
       "label": "t:sections.footer.settings.payment_enable.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "custome_icons",
+      "label": "Custom payment icons",
+      "default": false,
+      "info": "You can add custom payment icons from the theme settings."
     },
     {
       "type": "checkbox",
