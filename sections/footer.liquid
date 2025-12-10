@@ -202,6 +202,99 @@
                         {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
                       {%- endif -%}
                     </div>
+                  {%- when 'social' -%}
+                    <ul class="footer-block__details-content list-unstyled footer-block__social">
+                      {%- if settings.social_facebook_link != blank -%}
+                        <li>
+                          <a href="{{ settings.social_facebook_link }}" target="_blank">
+                            <span class="svg-wrapper">
+                              {{- 'icon-facebook.svg' | inline_asset_content -}}
+                            </span>
+                            <span>{{ 'general.social.links.facebook' | t }}</span>
+                          </a>
+                        </li>
+                      {%- endif -%}
+                      {%- if settings.social_instagram_link != blank -%}
+                        <li>
+                          <a href="{{ settings.social_instagram_link }}" target="_blank">
+                            <span class="svg-wrapper">
+                              {{- 'icon-instagram.svg' | inline_asset_content -}}
+                            </span>
+                            <span>{{ 'general.social.links.instagram' | t }}</span>
+                          </a>
+                        </li>
+                      {%- endif -%}
+                      {%- if settings.social_youtube_link != blank -%}
+                        <li>
+                          <a href="{{ settings.social_youtube_link }}" target="_blank">
+                            <span class="svg-wrapper">
+                              {{- 'icon-youtube.svg' | inline_asset_content -}}
+                            </span>
+                            <span>{{ 'general.social.links.youtube' | t }}</span>
+                          </a>
+                        </li>
+                      {%- endif -%}
+                      {%- if settings.social_tiktok_link != blank -%}
+                        <li>
+                          <a href="{{ settings.social_tiktok_link }}" target="_blank">
+                            <span class="svg-wrapper">
+                              {{- 'icon-tiktok.svg' | inline_asset_content -}}
+                            </span>
+                            <span>{{ 'general.social.links.tiktok' | t }}</span>
+                          </a>
+                        </li>
+                      {%- endif -%}
+                      {%- if settings.social_twitter_link != blank -%}
+                        <li>
+                          <a href="{{ settings.social_twitter_link }}" target="_blank">
+                            <span class="svg-wrapper">
+                              {{- 'icon-twitter.svg' | inline_asset_content -}}
+                            </span>
+                            <span>{{ 'general.social.links.twitter' | t }}</span>
+                          </a>
+                        </li>
+                      {%- endif -%}
+                      {%- if settings.social_pinterest_link != blank -%}
+                        <li>
+                          <a href="{{ settings.social_pinterest_link }}" target="_blank">
+                            <span class="svg-wrapper">
+                              {{- 'icon-pinterest.svg' | inline_asset_content -}}
+                            </span>
+                            <span>{{ 'general.social.links.pinterest' | t }}</span>
+                          </a>
+                        </li>
+                      {%- endif -%}
+                      {%- if settings.social_snapchat_link != blank -%}
+                        <li>
+                          <a href="{{ settings.social_snapchat_link }}" target="_blank">
+                            <span class="svg-wrapper">
+                              {{- 'icon-snapchat.svg' | inline_asset_content -}}
+                            </span>
+                            <span>{{ 'general.social.links.snapchat' | t }}</span>
+                          </a>
+                        </li>
+                      {%- endif -%}
+                      {%- if settings.social_tumblr_link != blank -%}
+                        <li>
+                          <a href="{{ settings.social_tumblr_link }}" target="_blank">
+                            <span class="svg-wrapper">
+                              {{- 'icon-tumblr.svg' | inline_asset_content -}}
+                            </span>
+                            <span>{{ 'general.social.links.tumblr' | t }}</span>
+                          </a>
+                        </li>
+                      {%- endif -%}
+                      {%- if settings.social_vimeo_link != blank -%}
+                        <li>
+                          <a href="{{ settings.social_vimeo_link }}" target="_blank">
+                            <span class="svg-wrapper">
+                              {{- 'icon-vimeo.svg' | inline_asset_content -}}
+                            </span>
+                            <span>{{ 'general.social.links.vimeo' | t }}</span>
+                          </a>
+                        </li>
+                      {%- endif -%}
+                    </ul>
                 {%- endcase -%}
               </div>
             {%- endfor -%}
@@ -368,7 +461,7 @@
       </div>
     </div>
   </div>
-</footer>
+</footer>`
 
 {% schema %}
 {
