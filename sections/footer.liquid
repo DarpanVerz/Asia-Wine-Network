@@ -201,6 +201,34 @@
                       {%- else -%}
                         {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
                       {%- endif -%}
+                      {% if block.settings.text_1 != blank or block.settings.text_2 != blank or block.settings.text_3 != blank %}
+                      <ul class="contact_info">
+                        {% if block.settings.text_1 != blank %}
+                        <li>
+                          {% if block.settings.icon_1 != blank %}
+                            <span>{{- block.settings.icon_1 | image_url: width: block.settings.icon_1.width | image_tag: loading: 'lazy'-}}</span>
+                          {% endif %}
+                          {{ block.settings.text_1 }}
+                        </li>
+                        {% endif %}
+                        {% if block.settings.text_2 != blank %}
+                        <li>
+                          {% if block.settings.icon_2 != blank %}
+                            <span>{{- block.settings.icon_2 | image_url: width: block.settings.icon_2.width | image_tag: loading: 'lazy'-}}</span>
+                          {% endif %}
+                          {{ block.settings.text_2 }}
+                        </li>
+                        {% endif %}
+                        {% if block.settings.text_3 != blank %}
+                        <li>
+                          {% if block.settings.icon_3 != blank %}
+                            <span>{{- block.settings.icon_3 | image_url: width: block.settings.icon_3.width | image_tag: loading: 'lazy'-}}</span>
+                          {% endif %}
+                          {{ block.settings.text_3 }}
+                        </li>
+                        {% endif %}
+                      </ul>
+                      {% endif %}
                     </div>
                   {%- when 'social' -%}
                     <ul class="footer-block__details-content list-unstyled footer-block__social">
@@ -579,19 +607,38 @@
           "default": "center"
         },
         {
-          "type": "richtext",
-          "id": "location",
-          "label": "Location"
+          "type": "header",
+          "content": "Contact info"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon_1",
+          "label": "Icon 1"
         },
         {
           "type": "richtext",
-          "id": "phone_number",
-          "label": "Phone number"
+          "id": "text_1",
+          "label": "Text 1"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon_2",
+          "label": "Icon 2"
         },
         {
           "type": "richtext",
-          "id": "mail",
-          "label": "Email"
+          "id": "text_2",
+          "label": "Text 2"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon_3",
+          "label": "Icon 3"
+        },
+        {
+          "type": "richtext",
+          "id": "text_3",
+          "label": "Text 3"
         }
       ]
     }
