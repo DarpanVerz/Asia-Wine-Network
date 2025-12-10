@@ -19,8 +19,11 @@
           "settings": {
             "image_width": 100,
             "alignment": "center",
+            "icon_1": "shopify://shop_images/location.svg",
             "text_1": "<p>8 Boon Lay Way #07-05 8@Tradehub 21, 609964</p>",
+            "icon_2": "shopify://shop_images/phone.svg",
             "text_2": "<p>6273 3350 / 6273 3359</p>",
+            "icon_3": "shopify://shop_images/email.svg",
             "text_3": "<p>marketing@awn.com.sg</p>"
           }
         },
