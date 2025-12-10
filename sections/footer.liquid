@@ -232,7 +232,7 @@
                     <ul class="footer-block__details-content list-unstyled footer-block__social">
                       {%- if settings.social_facebook_link != blank -%}
                         <li>
-                          <a href="{{ settings.social_facebook_link }}" target="_blank">
+                          <a href="{{ settings.social_facebook_link }}" class="link link--text list-menu__item list-menu__item--link" target="_blank">
                             <span class="svg-wrapper">
                               {{- 'icon-facebook.svg' | inline_asset_content -}}
                             </span>
