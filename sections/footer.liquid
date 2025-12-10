@@ -198,8 +198,6 @@
                             height="{{ block.settings.image.height }}"
                           >
                         </div>
-                      {%- else -%}
-                        {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
                       {%- endif -%}
                       {% if block.settings.text_1 != blank or block.settings.text_2 != blank or block.settings.text_3 != blank %}
                       <ul class="contact_info">
