@@ -68,7 +68,7 @@
         "payment_enable": true,
         "custome_icons": true,
         "show_policy": false,
-        "copyright_text": "Trusted Wine Distributor - Singapore Copyright © 2021 Asia Wine Network Pte.Ltd . All Rights Reserved.",
+        "copyright_text": "Trusted Wine Distributor - Singapore Copyright &copy; {{ 'now' | date: '%Y' }} Asia Wine Network Pte.Ltd . All Rights Reserved.",
         "margin_top": 0,
         "padding_top": 56,
         "padding_bottom": 48
